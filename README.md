@@ -12,3 +12,4 @@
     - [競プロ鉄則](https://atcoder.jp/contests/tessoku-book)
 - その他
     - [ACM-ICPC](https://icpc.jp/)
+    - [模擬ACM-ICPC](https://jag-icpc.org/)
