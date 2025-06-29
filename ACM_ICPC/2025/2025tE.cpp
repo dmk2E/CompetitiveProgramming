@@ -70,6 +70,10 @@ int expr(string& s,int& now){
     return node_id;
 }
 
+/// @brief 繰り返し二乗法で，x^a を高速に計算
+/// @param x 被累乗数
+/// @param a 累乗数
+/// @return x^a の値
 int power(int x,int a){
     if(a==0)return 1;
     int res=power((((long long)x%MOD)*(x%MOD))%MOD,a/2)%MOD;
@@ -77,6 +81,9 @@ int power(int x,int a){
     return res;
 }
 
+/// @brief 生成した二分木上を探索し，解を出力
+/// @param now 訪問中の頂点番号
+/// @return 問題の解
 int dfs(int now){
     //printf("id:%d cnt:%d\n",now,not_decided);
     if('0'<=binary_tree[now].cond[0]&&binary_tree[now].cond[0]<='9'){
